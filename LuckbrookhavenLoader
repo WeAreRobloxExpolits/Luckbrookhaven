@@ -1,0 +1,214 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Luck Brookhaven Hub V1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Main of the script"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+OrionLib:MakeNotification({
+	Name = "Welcome to Luck brookhaven script V1",
+	Content = "thanks for using and using our community script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+Tab:AddButton({
+	Name = "Spawn Go Kart",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","GoKart")      		
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Spawn sell house",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Player1sHous1eChoic1e"]:FireServer("PlayerSellHouse")   		
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Spawn house",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Gettin1gHous1e"]:FireServer("PickingCustomHouse","045_House",12)    		
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "spawn lambo",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","Lambo")
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "Spawn school bus",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","SchoolBus")    		
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "Faces",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "Faces"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Face 1",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Updat1eAvata1r"]:FireServer("wear",6093229304)    		
+print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "New cars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "New cars"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Spawn ModeIT",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","ModelT")    		
+print("button pressed")
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "New Car2",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","VWBus")   		
+print("button pressed")
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "New car3",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","67FordTruck")    		
+print("button pressed")
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab:AddButton({
+	Name = "New Car4",
+	Callback = function()
+game:GetService("ReplicatedStorage").RE["1Ca1r"]:FireServer("PickingCar","P50")    		
+print("button pressed")
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
